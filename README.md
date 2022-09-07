@@ -31,3 +31,5 @@ log.txt with all possible combinations, in this case
 461423505682
 461423505750
 ```
+
+log.txt will be reset when launching
