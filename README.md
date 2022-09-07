@@ -6,7 +6,7 @@ bruteforces through nintendo 3ds friend codes
 ```python3 friendcode.py <friendcode>```
 
 Example:
-```pyton3 friendcode.py 461423505```
+```python3 friendcode.py 461423505```
 
 * Note that it only accepts 1-12 characters, no '-'
 
