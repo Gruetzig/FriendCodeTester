@@ -3,10 +3,11 @@ import re
 import hashlib
 import os
 # remove current log and make a new file
-os.remove("log.txt")
+if os.path.exists("log.txt"):
+    os.remove("log.txt")
 f = open("log.txt", 'a')
 
-# 0 filler
+# 0 filler: 0 -> 0000, 123 -> 0123, 5555 -> 5555, 2 -> 0002, for examples, i think you understand
 def fill_zeros(y, inpu):
     for i in range(12-len(inpu)-len(y)):
         y = "0" + y 
@@ -20,13 +21,11 @@ if len(inp) >= 12:
     
 rangenum = 10**(12-len(inp))-1
 print(rangenum)
-
+# start at 0
 x = "0"
 
 # test through all possible friend codes, print valid ones to log.txt 
-
-for i in range(rangenum):
-    
+for i in range(rangenum):    
     fc = inp + fill_zeros(x, inp)
     fcint = int(fc)                      # next 7 lines blatantly stolen from https://gist.github.com/TobiX/0106edd801c6c9f276e1fa920d8b0fd8
     principal = fcint & 0xffffffff
@@ -39,3 +38,5 @@ for i in range(rangenum):
         f.write(fc)
         f.write("\n")
     x = str(int(x)+1)
+
+
