@@ -12,7 +12,10 @@ Example:
 
 Output:
 
-amount of cycles
+amount of cycles, in this case
+```
+999
+```
 log.txt with all possible combinations, in this case
 ```
 461423505092
