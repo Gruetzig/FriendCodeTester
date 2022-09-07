@@ -15,7 +15,7 @@ def fill_zeros(y, inpu):
     
 # gets and converts fc to be usable
 inp = sys.argv[1]
-if len(inp) >= 12:
+if len(inp) > 12:
     print("too long")
     sys.exit()
     
@@ -38,5 +38,3 @@ for i in range(rangenum):
         f.write(fc)
         f.write("\n")
     x = str(int(x)+1)
-
-
