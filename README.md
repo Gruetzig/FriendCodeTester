@@ -11,6 +11,7 @@ Example:
 * Note that it only accepts 1-12 characters, no '-'
 
 Output:
+
 amount of cycles
 log.txt with all possible combinations, in this case
 ```
