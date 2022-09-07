@@ -33,3 +33,10 @@ log.txt with all possible combinations, in this case
 ```
 
 log.txt will be reset when launching
+
+
+### Explanation
+
+friend code has some check that makes it cool https://3dbrew.org/wiki/FRDU:IsValidFriendCode
+possible use cases: broken screen, want to find possible solutions
+
